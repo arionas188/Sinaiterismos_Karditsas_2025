@@ -66,7 +66,8 @@ body {
 
 }
 .main-page-desktop {
-    height: 100vh;
+    min-height: 89vh;
+    height: auto;
     width: 100%;
     background-image: url('img/Logo_Sinaiterismou.png');
     background-size: 40% auto; /* π.χ. πλάτος 200px */
@@ -100,7 +101,7 @@ body {
 }
 
 .section1{
-    height: 100svh;
+    height: 100vh;
     background-color:rgb(40,73,43);
 
 }
