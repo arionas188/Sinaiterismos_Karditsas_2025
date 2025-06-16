@@ -84,7 +84,8 @@ body {
 }
 
 .main-page-mobile {
-    height: 89vh;
+    min-height: 89vh;
+    height: auto;
     width: 100%;
     background-image: url('img/Logo_Sinaiterismou.png');
     background-size: 90% auto; /* π.χ. πλάτος 200px */
