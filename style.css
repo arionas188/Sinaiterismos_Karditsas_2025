@@ -29,8 +29,8 @@ body {
 
 .header-mobile {
     font-family: 'Roboto', 'Inter', 'Helvetica Neue', 'Arial', sans-serif;
-    /*position: fixed;
-    top: 2%;
+    position: fixed;
+    /*top: 2%;
     left: 5%;
     right: 5%;*/
     margin-top: 2%;
@@ -87,8 +87,7 @@ body {
     
 }
 .main-page-mobile .btn {
-    height: auto;
-    width: auto;
+   
     background-color:rgba(160, 152, 81, 0.4); 
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3),
                 0 8px 24px rgba(0, 0, 0, 0.2);
