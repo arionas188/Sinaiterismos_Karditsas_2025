@@ -79,7 +79,7 @@ body {
     
     background-image: url('img/Logo_Sinaiterismou.png');
    /*background-size: 70% auto; /* π.χ. πλάτος 200px */
-   background-size: contain;
+    background-size: contain;
 
     background-position: center center;
     background-repeat: no-repeat;
