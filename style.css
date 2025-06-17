@@ -29,12 +29,13 @@ body {
 
 .header-mobile {
     font-family: 'Roboto', 'Inter', 'Helvetica Neue', 'Arial', sans-serif;
-    position: fixed;
+    /*position: fixed;
     top: 2%;
     left: 5%;
-    right: 5%;
-    width: auto;
-    height: auto;
+    right: 5%;*/
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
     background: transparent; /* Εντελώς διάφανο background */
     background-color: rgba(160, 152, 81, 0.4); /* Χρώμα με διαφάνεια */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3),
