@@ -48,16 +48,19 @@ body {
 
 .main-page-desktop {
     min-height: 100vh;
-    height: auto;
+    /*height: auto; */
     width: 100%;
     
     background-image: url('img/Logo_Sinaiterismou.png');
-    background-size: 40% auto; 
+    /*background-size: 40% auto;*/
+    background-size: contain;
+
     background-position: center center;
     background-repeat: no-repeat;
 
     
 }
+
 .main-page-desktop .btn {
     background-color:rgba(160, 152, 81, 0.4); 
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3),
@@ -70,11 +73,13 @@ body {
 
 .main-page-mobile {
     min-height: 100vh;
-    height: auto;
+    /*height: auto; */
     width: 100%;
     
     background-image: url('img/Logo_Sinaiterismou.png');
-    background-size: 70% auto; /* π.χ. πλάτος 200px */
+   /*background-size: 70% auto; /* π.χ. πλάτος 200px */
+   background-size: contain;
+
     background-position: center center;
     background-repeat: no-repeat;
 
