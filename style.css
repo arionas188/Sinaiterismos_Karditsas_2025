@@ -37,9 +37,6 @@ body {
     height: auto;
     background: transparent; /* Εντελώς διάφανο background */
     background-color: rgba(160, 152, 81, 0.4); /* Χρώμα με διαφάνεια */
-
-
-
     backdrop-filter: blur(10px); /* Θόλωμα */
     -webkit-backdrop-filter: blur(10px); /* Υποστήριξη Safari */
     z-index: 1000;
