@@ -125,12 +125,23 @@ body {
     background-color: wheat ;
 }
 
-.section3{
-    height: 400px;
-    background-color: green ;
-}
-
 /* section2 */
+
+
+/* section3 */
+.section3{
+  min-height: 100vh;
+  background-color:rgb(40,73,43);
+}
+.section3 , h3 {
+  color:  rgb(159, 155, 121) ;
+}
+.section3 h2, h4  {
+  color: rgb(161,155,83);
+}
+.custom-text-section3  {
+  color:  rgb(159, 155, 121);
+}
 .timeline {
     position: relative;
     padding: 0;
@@ -217,7 +228,7 @@ body {
   }
   .timeline .timeline-heading h4, .timeline .timeline-heading .h4 {
     margin-top: 0;
-    color: inherit;
+    /*color: inherit;*/
   }
   .timeline .timeline-heading h4.subheading, .timeline .timeline-heading .subheading.h4 {
     text-transform: none;
@@ -225,6 +236,7 @@ body {
   .timeline .timeline-body > ul,
   .timeline .timeline-body > p {
     margin-bottom: 0;
+    
   }
   
   @media (min-width: 768px) {
