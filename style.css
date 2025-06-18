@@ -120,12 +120,26 @@ body {
 
 }
 
-.section2{
-    min-height: 100vh;
-    background-color: wheat ;
-}
 
 /* section2 */
+.section2{
+  min-height: 100vh;
+  background-color:rgb(234,235,220);
+}
+
+.custom-icon-drastiriotites img {
+    
+    width: 80px;
+    height: 80px;
+    margin-left: 0;
+    text-align: center;
+    color: white;
+    border: 3px solid rgb(40,73,43);
+    border-radius: 100%;
+    background-color:rgb(218,216,190);
+
+}
+
 
 
 /* section3 */
@@ -140,7 +154,7 @@ body {
   color: rgb(161,155,83);
 }
 .custom-text-section3  {
-  color:  rgb(159, 155, 121);
+  color:  rgb(159, 155, 121); /* color for p */
 }
 .timeline {
     position: relative;
