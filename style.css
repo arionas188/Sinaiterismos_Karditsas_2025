@@ -121,7 +121,7 @@ body {
 }
 
 
-/* section2 */
+/* section2 - ΔΡΑΣΤΗΡΙΟΤΗΤΕΣ - START  */
 .section2{
   min-height: 100vh;
   background-color:rgb(234,235,220);
@@ -129,8 +129,6 @@ body {
 
 .custom-icon-drastiriotites img {
     
-    width: 80px;
-    height: 80px;
     margin-left: 0;
     text-align: center;
     color: white;
@@ -143,6 +141,28 @@ body {
 
 
 /* section3 */
+.custom-li {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 1.2em;
+}
+
+.custom-li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  font-size: 1.2em;
+  line-height: 1;
+  color: black; /* Ή άλλο χρώμα */
+}
+
+.custom-li .badge {
+  margin: 0 0.5em;
+}
+
+
+
 .section3{
   min-height: 100vh;
   background-color:rgb(40,73,43);
@@ -211,7 +231,7 @@ body {
     margin-left: 0;
     text-align: center;
     color: white;
-    border: 4px solid rgb(161,155,83);
+    border: 3px solid rgb(161,155,83);
     border-radius: 100%;
     background-color:rgb(218,216,190);
   }
@@ -259,7 +279,7 @@ body {
     }
     .timeline > li {
       min-height: 100px;
-      margin-bottom: 100px;
+      margin-bottom: 20px;
     }
     .timeline > li .timeline-panel {
       float: left;
@@ -318,7 +338,7 @@ body {
       margin-left: -40px;
     }
     .timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
-      margin-top: 40px;
+      margin-top: 10px;
     }
     .timeline > li.timeline-inverted > .timeline-panel {
       padding: 0 100px 20px 20px;
