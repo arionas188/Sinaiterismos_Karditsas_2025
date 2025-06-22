@@ -46,20 +46,3 @@ function playAnimation() {
     badge.classList.add('animate__animated', 'animate__flash');
   }, 2000);
 
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      const targetId = this.getAttribute('href');
-      const target = document.querySelector(targetId);
-      if (!target) return;
-  
-      e.preventDefault();
-  
-      const offset = 80; // Πόσα px ύψος έχει το header σου
-      const top = target.getBoundingClientRect().top + window.scrollY - offset;
-  
-      window.scrollTo({
-        top: top,
-        behavior: 'smooth'
-      });
-    });
-  });
