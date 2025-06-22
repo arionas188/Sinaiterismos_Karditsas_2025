@@ -21,7 +21,7 @@ document.querySelectorAll('.toggle-link').forEach(link => {
     });
   });
 
-// annimation sto id=animatedHeading stis upiresies section3
+// annimation sto id=animatedHeading stis upiresies section3 - START
 const heading = document.getElementById('animatedHeading');
 function playAnimation() {
     // Αφαιρούμε την κλάση (reset)
@@ -45,4 +45,4 @@ function playAnimation() {
     void badge.offsetWidth;
     badge.classList.add('animate__animated', 'animate__flash');
   }, 2000);
-
+// annimation sto id=animatedHeading stis upiresies section3 - END

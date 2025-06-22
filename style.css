@@ -183,6 +183,9 @@ body {
   min-height: 100vh;
   background-color:rgb(40,73,43);
 }
+.section3 , h4{
+  padding-left: 18px;
+}
 .section3 , h3 {
   color:  rgb(159, 155, 121) ;
 }
@@ -191,6 +194,8 @@ body {
 }
 .custom-text-section3  {
   color:  rgb(159, 155, 121); /* color for p */
+  padding-left: 18px;
+  text-align: start;
 }
 .timeline {
     position: relative;
