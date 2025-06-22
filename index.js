@@ -46,16 +46,3 @@ function playAnimation() {
     badge.classList.add('animate__animated', 'animate__flash');
   }, 2000);
 
-  document.querySelector('a[href="#o-sinaiterismos"]').addEventListener('click', function(e) {
-    e.preventDefault();
-    document.querySelector('#o-sinaiterismos').scrollIntoView({
-      behavior: 'smooth'
-    });
-  });
-
-  document.querySelector('a[href="#oi-drastiriotites"]').addEventListener('click', function(e) {
-    e.preventDefault();
-    document.querySelector('#oi-drastiriotites').scrollIntoView({
-      behavior: 'smooth'
-    });
-  });
