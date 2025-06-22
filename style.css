@@ -7,6 +7,7 @@ body {
     min-height: 100vh; /* Εξασφαλίζει ότι το site έχει τουλάχιστον το ύψος της οθόνης */
 
 }
+
 .header-desktop {
     font-family: 'Roboto', 'Inter', 'Helvetica Neue', 'Arial', sans-serif;
     position: fixed;
@@ -26,6 +27,30 @@ body {
     -webkit-backdrop-filter: blur(10px); /* Υποστήριξη Safari */
     z-index: 1000;
 }
+
+/* Εδώ βάζεις CSS που θες να εφαρμοστεί όταν το device είναι σε landscape */
+@media screen and (max-width: 991.98px) and (max-width: 1024px) and (orientation: landscape) {
+  .header-desktop { 
+    width: 800px;
+    position: fixed;
+    top: 3%;
+    left: 8%;
+    right: 10%;
+
+  }
+}
+
+@media screen and (max-width: 768px){
+  .header-desktop { 
+    width: 650px;
+    position: fixed;
+    top: 3%;
+    left: 8%;
+    right: 10%;
+
+  }
+}
+
 
 .header-mobile {
     font-family: 'Roboto', 'Inter', 'Helvetica Neue', 'Arial', sans-serif;
@@ -93,27 +118,7 @@ body {
 
 }
 
-/*@media (orientation: landscape) {
-     Κώδικας CSS για landscape mode */
-    /*.header-mobile {
-        font-family: 'Roboto', 'Inter', 'Helvetica Neue', 'Arial', sans-serif;
-        /*top: 2%;
-        left: 5%;
-        right: 5%;*/
-       /* margin-top: 2%;
-       /* margin-left: 5%;
-        margin-right: 5%;
-        background: transparent; /* Εντελώς διάφανο background */
-       /* background-color: rgba(160, 152, 81, 0.4); /* Χρώμα με διαφάνεια */
-       /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3),
-                    0 8px 24px rgba(0, 0, 0, 0.2);
-    
-        backdrop-filter: blur(10px); /* Θόλωμα */
-       /* -webkit-backdrop-filter: blur(10px); /* Υποστήριξη Safari */
-       /* z-index: 1000;
-    }
-    
-  }*/
+
 .section1 {
     height: 100vh;
     background-color:rgb(40,73,43);
@@ -122,6 +127,36 @@ body {
 
 
 /* section2 - ΔΡΑΣΤΗΡΙΟΤΗΤΕΣ - START  */
+.section2 , h2 {
+  color: rgb(161,155,83);
+}
+
+.custom-border-section2 {
+  position: relative;             /* είναι το απόλυτο σχετικό σε αυτό - στο γονέα */
+}
+
+.custom-border-section2::after {
+  content: "";
+  position: absolute;             /*  στο ::after */
+  bottom: 0;
+  left: 50%;                    /* πάει το αριστερό όριο στη μέση */
+  transform: translateX(-50%); /* τραβάει το στοιχείο προς τα αριστερά ίσο με το μισό πλάτος του */
+  width: 500px;
+  height: 1px;
+  background-color: rgb(40,73,43);
+}
+/* για tablet/κινητό */
+@media (max-width: 768px) {
+  .custom-border-section2::after {
+    width: 350px; 
+  }
+}
+/* ακόμα πιο μικρό για κινητά */
+@media (max-width: 480px) {
+  .custom-border-section2::after {
+    width: 250px; 
+  }
+}
 .section2{
   min-height: 100vh;
   background-color:rgb(234,235,220);
@@ -141,25 +176,6 @@ body {
 
 
 /* section3 */
-.custom-li {
-  display: flex;
-  align-items: center;
-  position: relative;
-  padding-left: 1.2em;
-}
-
-.custom-li::before {
-  content: '•';
-  position: absolute;
-  left: 0;
-  font-size: 1.2em;
-  line-height: 1;
-  color: black; /* Ή άλλο χρώμα */
-}
-
-.custom-li .badge {
-  margin: 0 0.5em;
-}
 
 
 
