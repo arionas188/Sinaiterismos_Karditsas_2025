@@ -46,3 +46,38 @@ function playAnimation() {
     badge.classList.add('animate__animated', 'animate__flash');
   }, 2000);
 // annimation sto id=animatedHeading stis upiresies section3 - END
+
+function showFancyModal() {
+  document.body.classList.add("blurred");
+
+  // Δημιουργία overlay για θόλωμα φόντου
+  const overlay = document.createElement("div");
+  overlay.id = "modal-overlay";
+  document.body.appendChild(overlay);
+
+  // Δημιουργία του modal
+  const modal = document.createElement("div");
+  modal.id = "custom-modal";
+
+  // Υπολογίζει σε ποιο ύψος είμαστε και το τοποθετεί εκεί
+  const scrollTop = window.scrollY || window.pageYOffset;
+  modal.style.top = `${scrollTop + 100}px`; // +100px για να μην κολλάει ακριβώς στην κορυφή
+
+  // Φόρτωσε το περιεχόμενο του modal
+  fetch("modal-content.html")
+    .then((res) => res.text())
+    .then((html) => {
+      modal.innerHTML = html;
+      document.body.appendChild(modal);
+    });
+}
+
+function closeFancyModal() {
+  document.body.classList.remove("blurred");
+
+  const modal = document.getElementById("custom-modal");
+  if (modal) modal.remove();
+
+  const overlay = document.getElementById("modal-overlay");
+  if (overlay) overlay.remove();
+}

@@ -365,4 +365,43 @@ body {
       padding: 0 100px 20px 20px;
     }
   }
-  
+
+
+/* Όλο το περιεχόμενο εκτός του modal-content.html - START - */
+body.blurred #page-content {
+  filter: blur(6px);
+  transition: filter 0.3s ease;
+}
+
+/* Modal container */
+#custom-modal {
+  position: absolute;
+  top: 50%; /* θα διορθώσουμε αυτό με JS */
+  left: 50%;
+  transform: translate(-50%, 0); /* μόνο οριζόντια κεντραρισμένο */
+  z-index: 9999;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  max-width: 90%;
+  width: 500px;
+}
+
+#modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(203, 197, 197, 0.1); /* πολύ διαφανές άσπρο */
+  backdrop-filter: blur(2px); /* θόλωμα περιεχομένου πίσω */
+  -webkit-backdrop-filter: blur(8px); /* για Safari */
+  z-index: 9998;
+}
+/* Κουμπί κλεισίματος */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+/* Όλο το περιεχόμενο εκτός του modal-content.html - END - */
