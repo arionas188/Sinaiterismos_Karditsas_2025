@@ -64,7 +64,7 @@ function showFancyModal() {
   modal.style.top = `${scrollTop + 100}px`; // +100px για να μην κολλάει ακριβώς στην κορυφή
 
   // Φόρτωσε το περιεχόμενο του modal
-  fetch("modal-content.html")
+  fetch("modal-content.htm")
     .then((res) => res.text())
     .then((html) => {
       modal.innerHTML = html;
